@@ -1,0 +1,380 @@
+/*
+Theme Name: Nasza Parafia
+Theme URI: coderslab.pl
+Description: Witryna "Naszej Parafii" - pisemka obu obornickich parafii
+Version: 0.0.1
+Author: Małgorzata Pawlak
+Author URI: coderslab.pl
+*/
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* my styles -------------------------------------------------------------- */
+/* for header */
+html {
+  margin: 0;
+  content: " ";
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+header a:hover {
+  color: grey;
+}
+.logo_area {
+  height: 14vw;
+  background-image: url('images/Logo_NP.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 1.1vw;
+  /*border: 1px solid red;*/
+}
+.menu-top-menu-container {
+  height: 3vmin;
+  margin-bottom: 4vw;
+  width: 50vw;
+  margin-left: 1vw;
+
+}
+
+ul {
+  margin: 0;
+}
+.menu li {
+  display: inline;
+  padding: 0 1vw;
+  list-style-type: none;
+}
+#primary-sidebar {
+  height: 1vmin;
+  width: 50vw;
+  height: 7vw;
+  padding: 1vw;
+  display: flex;
+  list-style-type: none;
+  color: white;
+  margin-left: 4vw;
+  /*border: 1px solid yellow;*/
+}
+#primary-sidebar li{
+  display: inline;
+  padding: 0 1vw;
+  list-style-type: none;
+  font-weight: 100;
+}
+#archives-dropdown-2 option {
+  /*background-color: yellow;*/
+}
+
+/* for index */
+#content {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  /*border: 1px solid grey;*/
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  /*border: 1px solid green;*/
+  width: 99vw;
+  margin: 0 auto;
+}
+.post_area {
+  margin-bottom: 2vw;
+  /*border: 1px solid blue;*/
+}
+.cover_small {
+  border: 1px solid grey;
+  width: 25vw;
+  margin: 0vw 3vw 0vw 3vw;
+  height: 35.5vw;
+  text-align: center;
+  box-shadow: 10px 10px 5px #888888;
+  /*background-image: url('. $url.');*/
+}
+
+
+h1 {
+  margin: 0.3vw;
+}
+h2 {
+  font-size: 1.1vw;
+}
+h3 {
+  font-size: 1.2vw;
+}
+
+h1 a {
+  text-decoration: none;
+  font-size: 1.1vw;
+  text-align: center;
+
+}
+p {
+  font-size: 1.2vw;
+}
+#single-nav h3 a {
+  background-color: green;
+  color: white !important;
+  padding: 1px;
+}
+
+.myfooter {
+  display: inline-block;
+}
+.tiles{
+  display: inline-block;
+  width: 200px;
+  padding: 5px;
+  font-size: small;
+}
+
+
+/* for single */
+.cover_medium {
+  width: 38vw;
+  height: 53vw;
+  border: 1px solid grey;
+}
+
+#single {
+  display: flex;
+  justify-content: center;
+  padding-right: 1vw;
+  padding-left: 1vw;
+  width: 100vw;
+  align-items: stretch;
+  height: 120vw;
+  border: 1px solid grey;
+}
+.content-area {
+  border: 1px solid black;
+}
+
+.cover {
+  width: 50vw;
+  padding-right: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.download {
+  float: right;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50vw;
+  padding-left: 1vw;
+  padding-top: 10vw;
+}
+.see_on_line, .download a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  font-size: 1.2vw;
+  font-weight: bold;
+  height: 6vw;
+  margin: 3vw;
+  padding: 1vw;
+}
+
+.wide p {
+  text-align: center;
+}
+/*for footer*/
+.footer_area {
+  font-size: 0.8vw;
+  text-align: center;
+}
+
+/*for single-redaktor i content-redaktor*/
+.single_redaktor {
+  /*display: flex;*/
+  width: 45vw;
+  /*border: 3px solid grey;*/
+  padding: 1vw;
+  margin: 1vw;
+}
+.redaktor {
+  width: 44vw;
+  /*border: 3px solid grey;*/
+  padding: 1vw;
+  margin: 1vw;
+  align-self: auto;
+  height: 25vw;
+}
+.name{
+  width: 100%;
+  font-size: 1vw;
+  border-top: 1px solid grey;
+}
+.row {
+  display: flex;
+  align-content: flex-start;
+  /*border: 1px solid green;*/
+}
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+  clear:both;
+}
+.picture {
+  /*border: 1px solid red;*/
+  width: 12vw;
+}
+.description {
+  /*border: 1px solid red;*/
+  width: 44vw;
+  padding: 0.5vw;
+  margin-left: 1vw;
+  font-size: 1.2vw;
+}
+img{
+  width: 10vw;
+  margin: 1vw;
+  border: 1px solid grey;
+}
+/*for page*/
+#about_us {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 2vw;
+}
+/*for archive-redaktor*/
+.archive-redaktors,
+.wrap  {
+  /*border: 1px solid red;*/
+}
+.archive-redaktors {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.content-redaktor {
+  width: 40vw;
+}
+iframe {
+  height: 100vh;
+}
