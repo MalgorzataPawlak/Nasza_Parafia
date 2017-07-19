@@ -11,7 +11,8 @@ gulp.task('scss', function() {
 		}))
 	.pipe(sourcemaps.write())
 	// .pipe(gulp.dest('css/'))
-	.pipe(gulp.dest('css'));
+	// .pipe(gulp.dest('/'));
+	.pipe(gulp.dest(''));
 
 });
 

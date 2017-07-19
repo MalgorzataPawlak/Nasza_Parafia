@@ -1,0 +1,152 @@
+html {
+  margin: 0;
+  content: " ";
+  clear: both;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  // background-color: $primary-color;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  color: grey;
+  :hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.logo_area {
+  height: 15vw;
+  color: white;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.1vw;
+  background-color: white;
+  background-image: url('images/Logo_NP_mobile-300x45.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  // border: 0.1vw solid red;
+    @include desktop {
+    background-color: white;
+    background-image: url('images/Logo_NP.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-content: flex-end;
+  }
+}
+p {
+  border: 0.1vw solid red;
+}
+.menu-top-menu-container {
+  height: 15vw;
+  width: 35vw;
+  position: relative;
+  // border: 0.1vw solid red;
+  display: none;
+  @include desktop {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 38vw;
+    margin-left: 1vw;
+    font-size: 1.3vw;
+  }
+}
+
+.menu  {
+  width: 100%;
+  height: 70vw;
+  position: absolute;
+  // border: 0.1vw solid yellow;
+  background-color: black;
+  font-size: 4.3vw;
+  list-style-type: none;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  padding-left: 0;
+  @include desktop {
+    height: 3vw;
+    position: relative;
+    font-size: 1.2vw;
+    padding: 0.1vw;
+    margin-top: 0;
+    margin-bottom: 2.5vw;
+    padding: 0.1vw;
+    visibility: visible;
+    flex-direction: row;
+  }
+}
+.menu li {
+  color: white;
+  // border: 0.1vw solid yellow;
+  padding: 3vw;
+  @include desktop {
+    display: inline;
+    padding: 0.1vw;
+    visibility: visible;
+  }
+}
+// .menu li:hover {
+//   visibility: visible;
+// }
+
+
+.fa-bars {
+  font-size: 10vw;
+  width: 10vw;
+  height: 10vw;
+  color: grey;
+  margin: 2vw;
+  margin-left: 4vw;
+  // border: 1px solid yellow;
+  @include desktop {
+    visibility: hidden;
+    width: 0vw;
+    height: 100%;
+  }
+}
+.fa-bars:hover {
+  color: white;
+}
+
+#primary-sidebar .primary-sidebar{
+  border: 0.1vw solid yellow;
+  background-color: yellow;
+  visibility: hidden;
+  display: flex;
+  list-style-type: none;
+  color: white;
+  margin-left: 4vw;
+  /*border: 1px solid yellow;*/
+@include desktop {
+  display: flex;
+  height: 1vmin;
+  width: 50vw;
+  padding: 1vw;
+  border: 1vw solid yellow;
+  }
+}
+#primary-sidebar li {
+  display: inline;
+  padding: 0 1vw;
+  list-style-type: none;
+  font-weight: 100;
+}
+// #archives-dropdown-2 option {
+//   /*background-color: yellow;*/
+// }
+.sidebar-container { //to przenieść
+  border: 0.1vw solid red;
+  height: 5vw;
+  width: 80vw;
+}

@@ -26,5 +26,9 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div><!-- .wrap -->
-  
+
+<div class="navigation"> 
+  <?php wp_pagenavi();?>
+</div> <!--end of div class="navigation"-->
+
 <?php get_footer();

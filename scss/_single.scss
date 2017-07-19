@@ -1,0 +1,57 @@
+.cover_medium {
+  width: 38vw;
+  height: 53.9vw;
+  border: 1px solid grey;
+}
+
+#single {
+  display: flex;
+  justify-content: center;
+  padding-right: 1vw;
+  padding-left: 1vw;
+  width: 100vw;
+  align-items: stretch;
+  height: 120vw;
+  border: 1px solid grey;
+}
+.content-area {
+  border: 1px solid black;
+}
+
+.cover {
+  width: 50vw;
+  padding-right: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.download {
+  float: right;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50vw;
+  padding-left: 1vw;
+  padding-top: 10vw;
+}
+.see_on_line, .download a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  font-size: 1.2vw;
+  font-weight: bold;
+  height: 6vw;
+  margin: 3vw;
+  padding: 1vw;
+}
+
+.wide p {
+  text-align: center;
+}
+iframe {
+  height: 100vh;
+}
+.flowpaper-class {
+  height: 100vh;  
+}

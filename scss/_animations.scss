@@ -1,0 +1,30 @@
+// @keyframes fadeIn {
+//     0% {opacity: 0;}
+//     100% {opacity: 1;}
+// }
+
+// .post {
+    // animation-name: fadeIn;
+//     animation-duration: 5s;
+// }
+@keyframes popUp {
+  0% {transform: scale(1)}
+  50% {transform: scale(1.02)}
+  100% {transform: scale(1)}
+}
+
+.post {
+  animation-name: popUp;
+  animation-duration: 1s;
+}
+
+@keyframes writingName {
+  0% {transform: translate(0px)}
+  50% {transform: translate(1vw)}
+  100% {transform: translate(0px)}
+}
+
+.name {
+  animation-name: writingName;
+  animation-duration: 1s;
+}

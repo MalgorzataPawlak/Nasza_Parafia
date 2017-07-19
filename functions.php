@@ -6,7 +6,7 @@
 // add_filter('excerpt_length', 'change_excerpt_length');
 
 Include 'post-types/redaktor.php';
-// register_sidebars( 2, array( 'name' => 'sidebar %d' ) ); //to rejestruje 2 sidbary
+register_sidebars( 2, array( 'name' => 'sidebar %d' ) ); //to rejestruje 2 sidbary
  register_sidebars(1, array('name' => 'Sidebar 1', 'id' => 'sidebar-1'));
 
 

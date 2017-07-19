@@ -13,16 +13,19 @@
 
 			<?php endwhile;?>
 
-      <!-- <?php start_the_posts_navigation(); ?> -->
-
-		<?php else : ?>
+    <?php else : ?>
 
 			<?php get_template_part( 'content-none' ); ?>
 
 		<?php endif; ?>
 
+  </div> <!--end of div class="main"-->
 
-	</div> <!--end of div class="main"-->
 </div> <!--end of div id="content"-->
 
+<div class="navigation">
+  <?php wp_pagenavi();?>
+</div> <!--end of div class="navigation"-->
+
 <?php get_footer() ?>
+     

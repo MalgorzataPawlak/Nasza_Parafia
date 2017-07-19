@@ -1,0 +1,12 @@
+// $primary-color: pink;
+// $desktop: "(min-width: 1024px)";
+// $tablet: "(min-width: 768px and max-width: 1023px)";
+// $smartfon: "(max-width: 767px)";
+
+
+$desktop-min-width: 601px;
+@mixin desktop {
+  @media (min-width: "$desktop-min-width") {
+    @content;
+  }
+}

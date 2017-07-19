@@ -4,11 +4,13 @@
 	<title><?php wp_title() ?> </title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://use.fontawesome.com/cccbcbc998.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<?php wp_head(); ?>
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/style.css">
+	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style.css">
 
 
 </head>
@@ -16,10 +18,9 @@
 
 <header>
 	<div class="logo_area">
-
-		<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-				<?php dynamic_sidebar( 'sidebar-1' ); ?>
-		</div><!-- #primary-sidebar -->
+		<!-- <p> -->
+			<i class="fa fa-bars"></i>
+		<!-- </p> -->
 
 
   	<?php wp_nav_menu(array('menu' => "Top Menu")); ?>
@@ -31,7 +32,7 @@
 
 
 
-	</div> <!--end of div class="logo_area" -->
+  </div> <!--end of div class="logo_area" -->
 
 
 
