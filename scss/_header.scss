@@ -12,6 +12,8 @@ header a {
   color: white;
   text-decoration: none;
   color: grey;
+  margin: 0;
+  padding: 0;
   :hover {
     color: white;
     text-decoration: none;
@@ -22,9 +24,9 @@ header a {
   height: 15vw;
   color: white;
   margin: 0;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  // display: flex;
+  // align-items: center;
+  // flex-wrap: wrap;
   font-size: 1.1vw;
   background-color: white;
   background-image: url('images/Logo_NP_mobile-300x45.jpg');
@@ -33,6 +35,9 @@ header a {
   background-size: contain;
   // border: 0.1vw solid red;
     @include desktop {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
     background-color: white;
     background-image: url('images/Logo_NP.jpg');
     background-position: center;
@@ -41,65 +46,78 @@ header a {
     align-content: flex-end;
   }
 }
-p {
-  border: 0.1vw solid red;
-}
+
 .menu-top-menu-container {
-  height: 15vw;
-  width: 35vw;
+  height: 60vw;
+  width: 40vw;
   position: relative;
-  // border: 0.1vw solid red;
+  // border: 0.1vw solid black;
   display: none;
   @include desktop {
+    height: 15.2vw;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    width: 38vw;
-    margin-left: 1vw;
-    font-size: 1.3vw;
+    width: 40vw;
   }
+}
+ul {
+  padding: 0vw;
+
 }
 
 .menu  {
   width: 100%;
-  height: 70vw;
   position: absolute;
   // border: 0.1vw solid yellow;
   background-color: black;
+  border-radius: 3vw;
+  margin-top: 1.5vw;
+  margin-left: 0.5vw;
   font-size: 4.3vw;
   list-style-type: none;
-  font-weight: 500;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-content: center;
-  padding-left: 0;
+  :hover {
+    color: white;
+    text-decoration: none;
+      // background-color: black;
+  }
   @include desktop {
-    height: 3vw;
+    flex-direction: row;
+    background-color: transparent;
+    border-radius: 0;
+    height: 4vw;
     position: relative;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     padding: 0.1vw;
     margin-top: 0;
-    margin-bottom: 2.5vw;
-    padding: 0.1vw;
+    margin-bottom: 1.5vw;
     visibility: visible;
     flex-direction: row;
   }
 }
 .menu li {
   color: white;
-  // border: 0.1vw solid yellow;
-  padding: 3vw;
+    margin: 0;
+  padding: 2vw;
+  a {
+    margin: 0;
+    padding: 0;
+  }
+
   @include desktop {
+    background-color: black;
+    border: 0.1vw solid white;
     display: inline;
-    padding: 0.1vw;
+    // padding: 1.3vw;
     visibility: visible;
+    padding: 1vw;
   }
 }
-// .menu li:hover {
-//   visibility: visible;
-// }
-
 
 .fa-bars {
   font-size: 10vw;
@@ -113,6 +131,7 @@ p {
     visibility: hidden;
     width: 0vw;
     height: 100%;
+    margin: 1vw;
   }
 }
 .fa-bars:hover {
@@ -146,7 +165,10 @@ p {
 //   /*background-color: yellow;*/
 // }
 .sidebar-container { //to przenieść
-  border: 0.1vw solid red;
+  // border: 0.1vw solid red;
   height: 5vw;
   width: 80vw;
+}
+.text-2 {
+  padding: 0;
 }

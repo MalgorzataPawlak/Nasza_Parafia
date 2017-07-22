@@ -1,0 +1,34 @@
+#primary-sidebar {
+  width: 20vw;
+  // border: 0.1vw solid red;
+  padding-left: 1vw;
+  margin-right: 5vw;
+  h2 {
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding-top: 1vw;
+    padding-bottom: 0.5vw;
+  }
+}
+
+.alignright {
+  // border: 0.1vw solid yellow;
+}
+select {
+  font-size: 1.3vw;
+}
+.widgettitle {
+  margin-top: 2vw;
+  margin-bottom: 0;
+}
+// li .widget, li .widget-archive {
+//   font-size: 1.2vw;
+//   padding: 0;
+//   height: 0;
+// }
+.tagcloud, .textwidget, .tag-cloud-link  {
+  font-size: 1.2vw !important;
+}
+#archives-2 {
+  padding: 0;
+}

@@ -13,6 +13,10 @@
 			?>
 		</div><!--end of div id="about_us"-->
 
+		<div class="alignright">
+			<?php get_sidebar() ?>
+		</div>
+
 	</div><!--end of div id="content"-->
 
 	<?php get_footer() ?>

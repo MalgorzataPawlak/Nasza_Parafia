@@ -1,11 +1,11 @@
-<?php get_footer() ?>
 
+<?php get_header(); ?>
 
 <div id="archive-redaktors">
   <h2> Posty z kategorii: <?php echo get_category_link(single_redaktor_title()); ?></h2>
-  <!-- <div class="alignright">
+  <div class="alignright">
     <?php get_sidebar() ?>
-  </div> -->
+  </div>
 
   <div class="category">
       <?php
@@ -26,4 +26,6 @@
   <?php wp_pagenavi();?>
 </div> <!--end of div class="navigation"-->
 
-<?php get_header(); ?>  
+
+
+<?php get_footer() ?>

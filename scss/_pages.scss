@@ -1,5 +1,10 @@
 #about_us {
-  padding-left: 10vw;
-  padding-right: 10vw;
-  padding-top: 2vw;
+  padding: 2vw;
+  padding-top: 6vw;
+  @include desktop {
+    // padding-left: 15vw;
+    // padding-right: 15vw;
+    padding-top: 2vw;
+  }
+
 }

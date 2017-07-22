@@ -6,15 +6,6 @@ jQuery(document).ready(function($){
   var covers = $('.cover_small');
   var menus = $('.menu').find('li');
 
-  posts.css({
-    opacity: 0
-  });
-
-
-  for(i=0; i<=posts.length; i++) {
-    posts.eq(i).animate({opacity: 1}, i*200,  ).delay(1000);
-  }  
-
   links.on('mouseenter', function(){
     $(this).css('color', '#000000');
     var cover = $(this).find('.cover_small');
@@ -46,8 +37,8 @@ console.log(wpLink);
 // }
 
 
-var year = wpLink.substr(-8, 4 );
-console.log(year);
+// var year = wpLink.substr(-8, 4 );
+// console.log(year);
 
 
 // <option value="http://localhost/Nasza_Parafia/wordpress/2017/07/"> Lipiec 2017 </option>
@@ -55,9 +46,31 @@ var faBars = $('.logo_area').find('i');
 var menu = $('.logo_area').find('.menu-top-menu-container');
 var logoArea = $('.logo_area');
 
-faBars.on('mouseover', function() {
+faBars.on('mouseenter', function() {
   $(this).next().slideDown();
 })
+
+var devWidth = $('body').innerWidth();
+
+function hideMenu () {
+  if (devWidth < 600) {
+    menu.on('mouseleave', function() {
+      $(this).slideUp();
+    })
+  }
+}
+hideMenu ()
+
+function scrolling () {
+  if ($('iframe').hasClass('flowpaper-class')) {
+    var flowpaperPosition = $( ".flowpaper-class" ).offset().top;
+    console.log(flowpaperPosition);
+    $('html, body').animate({scrollTop: flowpaperPosition}, 2000 );
+  }
+}
+scrolling ();
+
+
 
 
 

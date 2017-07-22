@@ -2,6 +2,8 @@
   padding-left: 3.5vw;
   padding-right: 3.5vw;
   width: 100vw;
+  display: flex;
+  justify-content: space-between;
   // border: 1px solid grey;
 }
 
@@ -43,10 +45,10 @@ a h1:hover {
 
 .cover_small {
   border: 1px solid grey;
-  margin: 0vw 0vw 0vw 10vw;
+  margin: 0vw 0vw 0vw 6vw;
   box-shadow: 1vw 1vw 2vw #888888;
   width: 70vw;
-  height: 99.2vw;
+  height: 99.3vw;
   @include desktop {
     width: 25vw;
     height: 35.4vw;

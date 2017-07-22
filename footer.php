@@ -11,11 +11,11 @@
 
 		<div class="footer_area">
 
-			<div class="sidebar-container">
+			<!-- <div class="sidebar-container">
 				<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
 						<?php dynamic_sidebar( 'sidebar-1' ); ?>
 				</div><!-- #primary-sidebar -->
-			</div> <!--end of class="sidebar-container"> -->
+			<!-- </div> <!--end of class="sidebar-container"> --> --> -->
 
 
 		Powered by MP 2017 (my first site)

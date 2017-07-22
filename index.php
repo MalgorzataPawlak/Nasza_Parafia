@@ -21,11 +21,16 @@
 
   </div> <!--end of div class="main"-->
 
+	<div class="alignright">
+		<?php get_sidebar() ?>
+	</div>
+
 </div> <!--end of div id="content"-->
+
+
 
 <div class="navigation">
   <?php wp_pagenavi();?>
 </div> <!--end of div class="navigation"-->
 
 <?php get_footer() ?>
-     

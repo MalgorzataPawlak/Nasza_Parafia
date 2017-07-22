@@ -23,11 +23,19 @@ get_header(); ?>
 				<?php endwhile;
 			endif; ?>
 			</div> <!--and of div class="archive-redaktors"-->
+
+			<div class="alignright">
+				<?php get_sidebar(); ?>
+			</div>
+			
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+
+
 </div><!-- .wrap -->
 
-<div class="navigation"> 
+<div class="navigation">
   <?php wp_pagenavi();?>
 </div> <!--end of div class="navigation"-->
 

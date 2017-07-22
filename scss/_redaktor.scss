@@ -1,32 +1,40 @@
+#main {
+  width: 100vw;
+  margin-left: 1vw;
+  display: flex;
+}
+
 #content-redaktor {
-  width: 98vw;
-  height: 100vw;
-  border: 0.1vw solid yellow;
+  // border: 0.1vw solid yellow;
   @include desktop {
-      width: 40vw;
+      width: 35vw;
+  }
+}
+.content-redaktor {
+  width: 40vw;
+  margin-left: 1vw;
+  // border: 0.1vw solid blue;
+}
+.redaktor {
+  width: 60vw;
+  // border: 0.1vw solid green;
+  display: flex;
+  flex-direction: column;
+  @include desktop {
+    width: 35vw;
+    height: 40vw;
+    margin-top: 0;
+    // height: 40vw;
   }
 }
 
-.redaktor {
-  width: 98vw;
-  height: 40vw;
-  border: 0.1vw solid green;
-  margin-top: 4vw;
-  display: flex;
-  // flex-direction: column;
-  @include desktop {
-    width: 40vw;
-    height: 40vw;
-  }
-}
 .row {
-  width: 98vw;
+  width: 90vw;
   display: flex;
   flex-direction: row;
   align-content: flex-start;
-  // justify-content: center;
   align-items: flex-start;
-  border: 0.1vw solid yellow;
+  // border: 0.1vw solid green;
   margin: 0;
   :before,
   :after {
@@ -35,33 +43,39 @@
     clear:both;
   }
     @include desktop {
-    width: 40vw;
+    width: 35vw;
+    // height: 50vw;
     // flex-direction: row;
   }
 }
 .col {
-  border: 0.1vw solid red;
-  height: 40vw;
+  // border: 0.1vw solid red;
   display: flex;
   flex-direction: column;
-  align-content: space-around;
-  // align-items: flex-start;
+  align-content: space-between;
 }
 
-.single_redaktor {
-  /*display: flex;*/
-  width: 45vw;
-  height: 150vw;
-  border: 0.1vw solid grey;
-  padding: 1vw;
+.picture {
+  // border: 0.1vw solid red;
+  width: 30vw;
+  @include desktop {
+    width: 14vw;
+  }
+}
+img{
+  width: 24vw;
   margin: 1vw;
+  border: 0.1vw solid grey;
+  @include desktop {
+    width: 12vw;
+  }
 }
 
 .name{
   width: 79vw;
-  height: 10vw;
+  // height: 25vw;
   padding-top: 1vw;
-  border: 0.1vw solid blue;
+  // border: 0.1vw solid blue;
   text-align: left;
   h1 {
     font-size: 5vw;
@@ -70,43 +84,58 @@
     margin: 0;
   }
   @include desktop {
-    width: 40vw;
+    width: 30vw;
+    height: 6vw;
     text-align: left;
+    h1 {
+      font-size: 2vw;
+      font-weight: 700;
+      padding: 0;
+      margin: 0;
+    }
   }
 }
 
-
-.picture {
-  border: 0.1vw solid red;
-  width: 30vw;
-}
-img{
-  width: 24vw;
-  margin: 1vw;
-  border: 0.1vw solid grey;
+.dates {
+  display: block;
+  height: 10vw;
+  // border: 0.1vw solid blue;
+  font-size: 3.2vw;
+  @include desktop {
+    font-size: 1.4vw;
+    width: 30vw;
+    height: 6vw;
+  }
 }
 
 .description {
-  border: 0.1vw solid red;
-  padding: 1vw;
-  width: 60vw;
-  padding: 0.5vw;
+  width: 100vw;
+  padding: 1.5vw;
   margin-left: 1vw;
-  font-size: 3.5vw;
+  margin-bottom: 4vw;
+  font-size: 3.2vw;
+  // border: 0.1vw solid red;
   @include desktop {
-    font-size: 1.2vw;
-    width: 40vw;
+    width: 44vw;
+    font-size: 1.5vw;
+    padding: 0.5vw;
   }
 }
 
-.archive-redaktors,
-.wrap  {
-  border: 1px solid red;
+#main {
+  padding-top: 3vw;
 }
+
 .archive-redaktors {
+  // padding-top: 5vw;
+  border: 0.1vw solid red;
+  // width: 60vw;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
   align-items: center;
   @include desktop {
     flex-direction: row;
@@ -114,5 +143,19 @@ img{
 
 }
 iframe {
-  height: 100vh;
+  width: 100vw;
+  // height: 100vh;
+}
+hr {
+  display: block;
+  margin-top: 1vw;
+  margin-bottom: 3.5vw;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  border-style: inset;
+  border-width: 0.1vw;
+  @include desktop {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
 }

@@ -26,12 +26,14 @@ get_header();?>
 				<?php get_template_part( 'content-none' );
 		endif;?>
 
+    <div class="alignright">
+    	<?php get_sidebar() ?>
+    </div>  
+
 	</div> <!--end of div class="main"-->
 
-	<div class="alignright">
-		<?php get_sidebar() ?>
-	</div>
-	
+
+
 </div> <!--end of div id="content"-->
 
 

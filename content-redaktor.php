@@ -27,8 +27,8 @@
 
         <div class="dates">
 
-          e-mail:
-          <a href="mailto:<?php the_field('e-mail');?>"><?php the_field('e-mail');?></a>
+          <p style="display:inline-block">e-mail:</p>
+          <a style="display:inline-block" href="mailto:<?php the_field('e-mail');?>"><?php the_field('e-mail');?></a>
           <br>telefon:
           <?php the_field('numer_telefonu'); ?>
 
@@ -47,6 +47,9 @@
 
     </div> <!-- end of div class="row"-->
 
-  </div> <!--end of div class="single_redaktor"-->
+
+
+  </div> <!--end of div class="redaktor"-->
+  <hr>
 
 </div> <!-- end of div id="content">
