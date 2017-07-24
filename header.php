@@ -19,9 +19,10 @@
 <header>
 	<div class="logo_area">
 		<!-- <p> -->
-			<i class="fa fa-bars"></i>
+		<i class="fa fa-bars"></i>
 		<!-- </p> -->
 
+		<i class="fa fa-search" aria-hidden="true"></i>
 
   	<?php wp_nav_menu(array('menu' => "Top Menu")); ?>
 
@@ -29,6 +30,8 @@
 			if(has_nav_menu('top')): ?>
 
 		<?php endif; ?>
+
+
 
 
 

@@ -1,6 +1,7 @@
 jQuery(document).ready(function($){
   console.log("działa");
 
+  //for posts and desktop-menu:
   var posts = $('.post');
   var links = $('.post').find('a');
   var covers = $('.cover_small');
@@ -18,59 +19,79 @@ jQuery(document).ready(function($){
   });
 
   menus.on('mouseenter', function(){
-    $(this).css('font-weight', '800');
+    $(this).css('font-weight', '600');
     $(this).css('color', 'white');
   })
   menus.on('mouseleave', function(){
     $(this).css('font-weight', '400');
   })
 
-var optionText = $('option').eq(0);
-optionText.text('Wybierz rok');
 
-var wpLink = $('option').attr('value');
-// ?var text = wpLinks.eq(1).text();
-console.log(wpLink);
-// for (i=0; i<=wpLinks.length; i++) {
-//
-//
-// }
+//for changing archive:
+var wpLinks = $('#archives-dropdown-2').find('option');
+  console.log(wpLinks.length);
+
+  wpLinks.each(function() {
+    var year = $(this).val().substr(-8, 4);
+    console.log(year);
+    console.log($(this).text(year));
+    console.log($(this).text());
+
+  });
+  var optionText = $('option').eq(0);
+  optionText.text('Wybierz rok');
 
 
-// var year = wpLink.substr(-8, 4 );
-// console.log(year);
 
+  //for mobile menu:
+  var faBars = $('.fa-bars').eq(0);
+  var menu = $('.menu-top-menu-container');
 
-// <option value="http://localhost/Nasza_Parafia/wordpress/2017/07/"> Lipiec 2017 </option>
-var faBars = $('.logo_area').find('i');
-var menu = $('.logo_area').find('.menu-top-menu-container');
-var logoArea = $('.logo_area');
+  faBars.on('mouseenter', function() {
+    menu.slideDown(1000);
+  })
 
-faBars.on('mouseenter', function() {
-  $(this).next().slideDown();
-})
+  var devWidth = $('body').innerWidth();
 
-var devWidth = $('body').innerWidth();
-
-function hideMenu () {
-  if (devWidth < 600) {
-    menu.on('mouseleave', function() {
-      $(this).slideUp();
-    })
+  function hideMenu () {
+    if (devWidth < 600) {
+      menu.on('mouseleave', function() {
+        $(this).slideUp(1000);
+      })
+    }
   }
-}
-hideMenu ()
+  hideMenu ();
 
-function scrolling () {
-  if ($('iframe').hasClass('flowpaper-class')) {
-    var flowpaperPosition = $( ".flowpaper-class" ).offset().top;
-    console.log(flowpaperPosition);
-    $('html, body').animate({scrollTop: flowpaperPosition}, 2000 );
+  var faSearch  = $('.fa-search').eq(0);
+  var sideBar = $('#primary-sidebar');
+
+  faSearch.on('mouseenter', function () {
+    $('#primary-sidebar').slideDown(1000);
+  })
+
+  function hideSidebar() {
+    if (devWidth < 600) {
+      sideBar.on('mouseleave', function() {
+        $(this).slideUp(1000);
+      })
+    }
   }
-}
-scrolling ();
+  hideSidebar();
 
 
+
+
+  //for single:
+  function scrolling () {
+    if ($('iframe').hasClass('flowpaper-class')) {
+      var flowpaperPosition = $( ".flowpaper-class" ).offset().top;
+      console.log(flowpaperPosition);
+      $('html, body').animate({scrollTop: flowpaperPosition}, 2000 );
+    }
+  }
+  scrolling ();
+
+  
 
 
 

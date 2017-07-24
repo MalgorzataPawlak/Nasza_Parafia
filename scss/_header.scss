@@ -24,9 +24,6 @@ header a {
   height: 15vw;
   color: white;
   margin: 0;
-  // display: flex;
-  // align-items: center;
-  // flex-wrap: wrap;
   font-size: 1.1vw;
   background-color: white;
   background-image: url('images/Logo_NP_mobile-300x45.jpg');
@@ -48,11 +45,12 @@ header a {
 }
 
 .menu-top-menu-container {
-  height: 60vw;
+  height: 45vw;
   width: 40vw;
   position: relative;
-  // border: 0.1vw solid black;
+  // border: 0.1vw solid red;
   display: none;
+  z-index: 3;
   @include desktop {
     height: 15.2vw;
     display: flex;
@@ -66,8 +64,8 @@ ul {
 
 }
 
-.menu  {
-  width: 100%;
+#menu-top-menu  {
+  width: 99%;
   position: absolute;
   // border: 0.1vw solid yellow;
   background-color: black;
@@ -119,7 +117,7 @@ ul {
   }
 }
 
-.fa-bars {
+.fa-bars, .fa-search {
   font-size: 10vw;
   width: 10vw;
   height: 10vw;
@@ -138,8 +136,9 @@ ul {
   color: white;
 }
 
+
 #primary-sidebar .primary-sidebar{
-  border: 0.1vw solid yellow;
+  // border: 0.1vw solid yellow;
   background-color: yellow;
   visibility: hidden;
   display: flex;

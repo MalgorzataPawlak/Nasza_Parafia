@@ -18,6 +18,7 @@
 			<!-- </div> <!--end of class="sidebar-container"> --> --> -->
 
 
+			<i class="fa fa-copyright" aria-hidden="true"></i>
 		Powered by MP 2017 (my first site)
 		</div>
 

@@ -1,33 +1,69 @@
 #primary-sidebar {
-  width: 20vw;
+  display: none;
+  width: 50vw;
   // border: 0.1vw solid red;
   padding-left: 1vw;
   margin-right: 5vw;
+  background-color: black;
+  color: grey;
+  position: absolute;
+  left: 20vw;
+  font-size: 4vw !important;
+  line-height: 5vw;
+  border-radius: 3vw;
+  padding: 2vw;
   h2 {
-    font-size: 1.5vw;
+    display: block;
+    width: 50vw;
+    font-size: 3.5vw;
     font-weight: 600;
     padding-top: 1vw;
     padding-bottom: 0.5vw;
   }
+  @include desktop {
+    display: block;
+    background-color: white;
+    width: 25vw;
+    border: 0.1vw solid red;
+    padding-left: 1vw;
+    margin-right: 1vw;
+    line-height: 2vw;
+    font-weight: 600;
+    color: black;
+    position: relative;
+    left: 0vw;
+    h2 {
+      padding-top: 1vw;
+      padding-bottom: 0.5vw;
+      font-size: 1.5vw;
+    }
+
+  }
 }
 
-.alignright {
-  // border: 0.1vw solid yellow;
-}
+
 select {
-  font-size: 1.3vw;
+  font-size: 3vw;
+  @include desktop {
+    font-size: 1.3vw;
+  }
+
 }
 .widgettitle {
   margin-top: 2vw;
   margin-bottom: 0;
 }
-// li .widget, li .widget-archive {
-//   font-size: 1.2vw;
-//   padding: 0;
-//   height: 0;
-// }
-.tagcloud, .textwidget, .tag-cloud-link  {
-  font-size: 1.2vw !important;
+li .widget, li .widget-archive {
+  font-size: 3vw;
+  padding: 0;
+  height: 0;
+}
+.tagcloud a, .textwidget p a, .tag-cloud-link a {
+  font-size: 3.5vw;
+  @include desktop {
+    font-size: 1.5vw;
+  }
+
 }
 #archives-2 {
   padding: 0;

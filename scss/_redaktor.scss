@@ -1,7 +1,8 @@
 #main {
   width: 100vw;
-  margin-left: 1vw;
+  margin-left: 2vw;
   display: flex;
+  padding-top: 3vw;
 }
 
 #content-redaktor {
@@ -13,7 +14,7 @@
 .content-redaktor {
   width: 40vw;
   margin-left: 1vw;
-  // border: 0.1vw solid blue;
+  border: 0.1vw solid blue;
 }
 .redaktor {
   width: 60vw;
@@ -36,6 +37,7 @@
   align-items: flex-start;
   // border: 0.1vw solid green;
   margin: 0;
+
   :before,
   :after {
     display: table;
@@ -44,6 +46,7 @@
   }
     @include desktop {
     width: 35vw;
+    min-height: 20vw;
     // height: 50vw;
     // flex-direction: row;
   }
@@ -116,15 +119,13 @@ img{
   font-size: 3.2vw;
   // border: 0.1vw solid red;
   @include desktop {
+    box-sizing: border-box;
     width: 44vw;
     font-size: 1.5vw;
     padding: 0.5vw;
   }
 }
 
-#main {
-  padding-top: 3vw;
-}
 
 .archive-redaktors {
   // padding-top: 5vw;
@@ -139,6 +140,7 @@ img{
   align-items: center;
   @include desktop {
     flex-direction: row;
+    margin-bottom: 1vw;
   }
 
 }
@@ -147,15 +149,13 @@ iframe {
   // height: 100vh;
 }
 hr {
-  display: block;
+  color: black;
   margin-top: 1vw;
   margin-bottom: 3.5vw;
-  margin-left: 30vw;
-  margin-right: 30vw;
-  border-style: inset;
-  border-width: 0.1vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+
   @include desktop {
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-top: 5vw;
   }
 }
