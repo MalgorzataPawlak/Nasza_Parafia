@@ -37,6 +37,7 @@
   align-items: flex-start;
   // border: 0.1vw solid green;
   margin: 0;
+    text-indent: 1em;
 
   :before,
   :after {
@@ -117,6 +118,9 @@ img{
   margin-left: 1vw;
   margin-bottom: 4vw;
   font-size: 3.2vw;
+  float: left;
+
+
   // border: 0.1vw solid red;
   @include desktop {
     box-sizing: border-box;
@@ -125,8 +129,9 @@ img{
     padding: 0.5vw;
   }
 }
-
-
+p {
+  text-align: justify;
+}
 .archive-redaktors {
   // padding-top: 5vw;
   border: 0.1vw solid red;

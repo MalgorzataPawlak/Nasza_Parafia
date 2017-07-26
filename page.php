@@ -1,5 +1,4 @@
-
-	<?php get_header(); ?>
+<?php get_header(); ?>
 
 	<div id="content">
 
@@ -19,4 +18,4 @@
 
 	</div><!--end of div id="content"-->
 
-	<?php get_footer() ?>
+	<?php get_footer() ?> 

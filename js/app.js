@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
     $(this).css('font-weight', '600');
     $(this).css('color', 'white');
   })
-  menus.on('mouseleave', function(){
+  menus.on('mouseleave', function(){  
     $(this).css('font-weight', '400');
   })
 
@@ -33,10 +33,7 @@ var wpLinks = $('#archives-dropdown-2').find('option');
 
   wpLinks.each(function() {
     var year = $(this).val().substr(-8, 4);
-    console.log(year);
-    console.log($(this).text(year));
-    console.log($(this).text());
-
+    $(this).text(year);
   });
   var optionText = $('option').eq(0);
   optionText.text('Wybierz rok');
@@ -91,7 +88,7 @@ var wpLinks = $('#archives-dropdown-2').find('option');
   }
   scrolling ();
 
-  
+
 
 
 

@@ -1,10 +1,42 @@
 #about_us {
-  padding: 2vw;
+  font-size: 4vw;
+  width: 94vw;
+  padding: 4vw;
   padding-top: 6vw;
-  @include desktop {
-    // padding-left: 15vw;
-    // padding-right: 15vw;
-    padding-top: 2vw;
+  border: 0.1vw solid red;
+  p {
+    width: 86vw;
+    border: 0.1vw solid green;
+    margin: 0;
+    padding-top: 4vw
   }
 
+  @include desktop {
+    font-size: 1.5vw;
+    width: 65vw;
+    padding: 2vw;
+    p {
+      width: 60vw;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      padding-top: 2vw;
+      border: 0.1vw solid green;
+    }
+  }
+}
+input,
+textarea {
+  border: 0.1vw solid red;
+  width: 80vw;
+  @include desktop {
+    width: 50vw;
+  }
+}
+.wpcf7-submit {
+  width: 30vw;
+  margin-left: 25vw;
+  @include desktop {
+    width: 10vw;
+    margin-left: 20vw;
+  }
 }

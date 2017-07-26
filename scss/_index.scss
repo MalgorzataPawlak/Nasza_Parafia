@@ -6,7 +6,7 @@
   justify-content: space-between;
   position: relative;
 
-  // border: 1px solid grey;
+  border: 1px solid grey;
 }
 
 .main {
@@ -14,7 +14,7 @@
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
-  // border: 1px solid green;
+  border: 1px solid green;
   margin: 0 auto;
   @include desktop {
     flex-direction: row;
@@ -71,13 +71,7 @@ a h1:hover {
   color: white !important;
   padding: 1px;
 }
-
+ 
 .myfooter {
   display: inline-block;
-}
-.tiles{
-  display: inline-block;
-  width: 200px;
-  padding: 5px;
-  font-size: small;
 }
