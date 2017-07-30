@@ -1,6 +1,7 @@
 #primary-sidebar {
   display: none;
   width: 50vw;
+  background-color: $primary_color_middle;
   // border: 0.1vw solid red;
   padding-left: 1vw;
   margin-right: 5vw;
@@ -24,7 +25,7 @@
     display: block;
     background-color: white;
     width: 25vw;
-    border: 0.1vw solid red;
+    // border: 0.1vw solid red;
     padding-left: 1vw;
     margin-right: 1vw;
     line-height: 2vw;
@@ -37,7 +38,6 @@
       padding-bottom: 0.5vw;
       font-size: 1.5vw;
     }
-
   }
 }
 
@@ -47,7 +47,6 @@ select {
   @include desktop {
     font-size: 1.3vw;
   }
-
 }
 .widgettitle {
   margin-top: 2vw;
@@ -63,7 +62,6 @@ li .widget, li .widget-archive {
   @include desktop {
     font-size: 1.5vw;
   }
-
 }
 #archives-2 {
   padding: 0;

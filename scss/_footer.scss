@@ -1,5 +1,76 @@
 .footer_area {
-  font-size: 0.8vw;
+  font-size: 2vw;
   text-align: center;
+  background-color: $primary_color_very_dark;
+  color: $primary_color_middle;
+  // height: 5vw;
+  text-align: center;
+  margin-top: 14vw;
+  @include desktop {
+    font-size: 1vw;
+    padding-bottom: 1vw;
+    margin-top: 0;
+  }
+
 }
-  
+.siteMap {
+  font-size: 3.5vw;
+  width: 100vw;
+  // border: 0.1vw solid red;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-around;
+  padding: 4vw 10vw;
+  margin-top: 2vw;
+  .row {
+    width: 46vw;
+    display: flex;
+    // border: 0.1vw solid red;
+    flex-direction: column;
+
+    @include desktop {
+    font-size: 1.5vw;
+    height: 6vw;
+    flex-direction: row;
+  }
+  ul {
+    width: 100vw;
+    // border: 0.1vw solid green;
+    color: $primary_color_light;
+    list-style: none;
+    text-align: left;
+    li {
+      width: 38vw;
+      height: 8vw;
+      padding-top: 0.5vw;
+      border-bottom: 0.1vw solid $primary_color_middle;
+      color: $primary_color_middle;
+      @include desktop {
+        width: 16vw;
+        height: 3vw;
+      }
+      a {
+        color: $primary_color_middle;
+      }
+        :hover {
+          font-weight: 500;
+          color: $white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+.siteMap #archives-dropdown-2 {
+  // border: 0.1vw solid red;
+  color: $black;
+  width: 38vw;
+  height: 8vw;
+  @include desktop {
+    height: 3vw;
+    width: 20vw;
+  }
+}

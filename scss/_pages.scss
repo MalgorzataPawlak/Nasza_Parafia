@@ -3,10 +3,10 @@
   width: 94vw;
   padding: 4vw;
   padding-top: 6vw;
-  border: 0.1vw solid red;
+  // border: 0.1vw solid red;
   p {
     width: 86vw;
-    border: 0.1vw solid green;
+    // border: 0.1vw solid green;
     margin: 0;
     padding-top: 4vw
   }
@@ -20,13 +20,13 @@
       padding-left: 5vw;
       padding-right: 5vw;
       padding-top: 2vw;
-      border: 0.1vw solid green;
+      // border: 0.1vw solid green;
     }
   }
 }
 input,
 textarea {
-  border: 0.1vw solid red;
+  // border: 0.1vw solid red;
   width: 80vw;
   @include desktop {
     width: 50vw;
