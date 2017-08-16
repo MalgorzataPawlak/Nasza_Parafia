@@ -95,12 +95,19 @@ var wpLinks = $('#archives-dropdown-2').find('option');
    var chooseYear = $('#archives-dropdown-2').clone();
    $('.siteMap').find('li').eq(4).one('click', function() {
     $('.siteMap').find('li').eq(5).slideUp();
-    $('.siteMap').find('li').eq(6).slideUp();
-    $('.siteMap').find('li').eq(7).slideUp();
     $('.siteMap').find('li').eq(4).after(chooseYear);
     });
   };
   selectYear();
+
+  function chooseCategory() {
+    var chooseCategory = $('#cat').clone();
+    $('.siteMap').find('li').eq(5).one('click', function() {
+      $('.siteMap').find('li').eq(6).slideUp();
+      $('.siteMap').find('li').eq(5).after(chooseCategory);
+    })
+  }
+  chooseCategory();
 
   function hoverLi () {
     var siteMapLi = $('.siteMap').find('li');
