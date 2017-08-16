@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
   var faBars = $('.fa-bars').eq(0);
   var menu = $('.menu-top-menu-container');
   var closingMenu = $('<li><i class="fa fa-times" aria-hidden="true"></i></li>')
-  var closingSidebar = $('<li><i class="fa fa-times" aria-hidden="true"></i></li>');
+  var closingSidebar = $('<li><i class="fa fa-times" style="float: right" aria-hidden="true"></i></li>');
   var devWidth = $('body').innerWidth();
   var faSearch  = $('.fa-search').eq(0);
   var sideBar = $('#primary-sidebar');
@@ -19,6 +19,9 @@ function mobileMenu () {
     $('#primary-sidebar').find('li').first().prepend(closingSidebar);
 
     faBars.on('mouseenter', function() {
+      // console.log($(this).css('color'));
+      // var faBarsHoverColor = white;
+      // $(this).css('color', faBarsHoverColor);
       menu.slideDown(1000);
     });
 

@@ -3,7 +3,7 @@
 
 <div id="archive-redaktors">
   <h2> Posty z kategorii: <?php echo get_category_link(single_redaktor_title()); ?></h2>
-  <div class="alignright">
+  <div class="alignright">  
     <?php get_sidebar() ?>
   </div>
 

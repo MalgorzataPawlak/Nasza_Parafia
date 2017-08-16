@@ -89,7 +89,7 @@ ul {
   width: 99%;
   position: absolute;
   // border: 0.1vw solid yellow;
-  background-color: black;
+  background-color: $primary_color_very_dark;
   border-radius: 3vw;
   margin-top: 1.5vw;
   margin-left: 0.5vw;
@@ -115,8 +115,9 @@ ul {
     border-radius: 0;
     height: 4vw;
     position: relative;
-    font-size: 1.3vw;
-    padding: 0.1vw;
+    font-size: 1.6vw;
+		font-weight: 600;
+    padding-bottom: 0.1vw;
     margin-top: 0;
     margin-bottom: 1.5vw;
     visibility: visible;
@@ -124,7 +125,7 @@ ul {
   }
 }
 .menu li {
-  color: white;
+  color: $primary_color_very_light;
   margin: 0;
   padding: 2vw;
   a {
@@ -133,7 +134,7 @@ ul {
   }
 
   @include desktop {
-    background-color: black;
+    background-color: $primary_color_very_dark;
     border: 0.1vw solid white;
     display: inline;
     visibility: visible;
